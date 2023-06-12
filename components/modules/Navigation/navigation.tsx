@@ -1,4 +1,5 @@
 import Label from "../../elements/Label/label";
+import { BiCaretDown } from "react-icons/bi";
 
 export default function Navigation(){
     return (
@@ -11,7 +12,11 @@ export default function Navigation(){
                         <Label htmlFor="users" value="Users" class="text-gray-400 cursor-pointer"/>
                         <Label htmlFor="reports" value="Reports" class="text-gray-400 cursor-pointer"/>
                     </div>
+                    <div className="flex flex-row text-gray-400 align-middle">
                     <Label htmlFor="userInfo" value="Mark Denning" class="text-gray-400 cursor-pointer"/>
+                    <span className="pt-1"><BiCaretDown size={14}/></span>
+                    </div>
+                    
                 </div>
             </div>
         </>

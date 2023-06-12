@@ -1,5 +1,6 @@
 import Label from "../../elements/Label/label";
-import { BiPlus, BiCaretDown } from "react-icons/bi";
+import { BiPlus, BiCaretDown, BiSearch } from "react-icons/bi";
+import Input from "../../elements/Input/input";
 
 export default function SearchPanel() {
   return (
@@ -23,7 +24,9 @@ export default function SearchPanel() {
         <div className="flex flex-row px-5 py-4 bg-white ">
           <div className="flex flex-row text-gray-500 align-middle">
             <Label htmlFor="" value="Status" class="" />
-            <span className="pt-1"><BiCaretDown size={14}/></span>
+            <span className="pt-1 pr-3"><BiCaretDown size={14}/></span>
+            <span className="border-l border-gray-400 pr-3"></span>
+            <span className="pt-1 pr-3"><BiSearch size={16}/></span>
           </div>
         </div>
       </div>
