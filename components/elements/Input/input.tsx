@@ -3,10 +3,11 @@ export default function Input(props: {
   name: string;
   id: string;
   class: string;
+  placeholder: string;
 }) {
   return (
     <>
-      <input type={props.type} name={props.name} id={props.id} className={props.class} />
+      <input type={props.type} name={props.name} id={props.id} className={props.class} placeholder={props.placeholder} />
     </>
   );
 }
